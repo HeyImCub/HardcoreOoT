@@ -35,8 +35,8 @@ export default class main implements IPlugin {
                 this.core.save.dd_flag = true;
                 this.core.save.entrance_index = 0xFFFFFFFF;
             }
-            if(this.core.save.health > 60){
-                this.core.save.health = 15;
+            if(this.core.save.health > 0x30){
+                this.core.save.health = 0x30;
                 this.ModLoader.logger.info("No Max Hearts!");
             }
             
